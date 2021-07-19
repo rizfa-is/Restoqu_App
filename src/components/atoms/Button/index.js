@@ -1,5 +1,5 @@
 import React from 'react';
-const {Text, TouchableOpacity, View, StyleSheet} = require('react-native');
+import {Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 
 const Button = ({text, color = '#FFC700', textColor = '#020202', onPress}) => {
   return (

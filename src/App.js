@@ -1,8 +1,9 @@
 import React from 'react';
-import Button from './components/atoms/Button';
+import SplashScreen from './pages/SplashScreen';
+
 
 const App = () => {
-  return <Button text="Ini Tombol" />;
+  return <SplashScreen/>
 };
 
 export default App;
