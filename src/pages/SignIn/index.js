@@ -1,16 +1,28 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Header } from '../../components'
+import { Button, Gap, Header, TextInput } from '../../components'
 
 const SignIn = () => {
     return (
         <View>
-            <Header/>
-            <Text>Sign In Page</Text>
+            <Header title='Sign In' subtitle='Find your best ever meal'/>
+            <Gap height={24} backgroundColor={'#e2e2e2'}/>
+            <View style={styles.container}>
+                <TextInput/>
+                <TextInput/>
+                <Button/>
+                <Button/>
+            </View>
         </View>
     )
 }
 
 export default SignIn
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:  {
+        backgroundColor: 'white',
+        paddingHorizontal: 24,
+        paddingTop: 26
+    },
+})
