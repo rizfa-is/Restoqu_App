@@ -1,7 +1,7 @@
 import React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import { Logo } from "../../assets"
-import { Gap } from "../../components/atoms"
+import { Gap } from "../../components"
 
 const SplashScreen = () => {
     return <View style={styles.container}>
