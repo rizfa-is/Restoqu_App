@@ -1,12 +1,22 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {ArrowBack} from '../../../assets';
 import {TextInput} from '../../atoms';
 
-const Header = ({title, subtitle}) => {
+const Header = ({title, subtitle, onBack}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
+      {onBack && (
+        <TouchableOpacity activeOpacity={0.7} onPress={onBack}>
+          <View style={styles.back}>
+            <ArrowBack />
+          </View>
+        </TouchableOpacity>
+      )}
+      <View>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.subtitle}>{subtitle}</Text>
+      </View>
     </View>
   );
 };
@@ -19,6 +29,8 @@ const styles = StyleSheet.create({
     paddingBottom: 24,
     paddingTop: 30,
     backgroundColor: 'white',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   title: {
     fontSize: 22,
@@ -29,5 +41,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Poppins-Light',
     color: '#020202',
+  },
+  back: {
+    padding: 16,
+    marginEnd: 16,
+    marginStart: -10
   },
 });
