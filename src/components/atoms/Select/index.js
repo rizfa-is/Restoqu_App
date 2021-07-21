@@ -1,11 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
+import Gap from '../Gap';
 
-const Select = () => {
+const Select = ({label}) => {
   return (
     <View>
-      <Text style={styles.text}>Label Select Options</Text>
+      <Text style={styles.text}>{label}</Text>
+      <Gap height={6} />
       <View style={styles.box}>
         <Picker
         // selectedValue={selectedLanguage}
