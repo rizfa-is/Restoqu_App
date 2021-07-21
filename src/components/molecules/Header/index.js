@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
   back: {
     padding: 16,
     marginEnd: 16,
-    marginStart: -10
+    marginStart: -10,
   },
 });
