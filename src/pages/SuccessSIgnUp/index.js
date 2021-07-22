@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {SuccessSignUpImg} from '../../assets';
 import {Button, Gap} from '../../components';
 
-const SuccessSignUp = () => {
+const SuccessSignUp = ({navigation}) => {
   return (
     <View style={styles.container}>
       <SuccessSignUpImg />
@@ -14,7 +14,10 @@ const SuccessSignUp = () => {
       <Text style={styles.subtitle}>some foods as a self-reward</Text>
       <Gap height={30} />
       <View style={styles.buttonContainer}>
-        <Button text="Find Foods" />
+        <Button
+          text="Find Foods"
+          onPress={() => navigation.replace('MainApp')}
+        />
       </View>
     </View>
   );
