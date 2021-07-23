@@ -5,6 +5,8 @@ import ICProfileOn from './ic_profile.svg';
 import ICHomeOff from './ic_home_normal.svg';
 import ICOrderOff from './ic_order_normal.svg';
 import ICProfileOff from './ic_profile_normal.svg';
+import ICStarOn from './ic_star_on.svg';
+import ICStarOff from './ic_star_off.svg';
 
 export {
   ArrowBack,
@@ -14,4 +16,6 @@ export {
   ICHomeOff,
   ICOrderOff,
   ICProfileOff,
+  ICStarOn,
+  ICStarOff,
 };
