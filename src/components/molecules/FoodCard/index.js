@@ -1,23 +1,14 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {ICStarOff, ICStarOn} from '../../../assets';
+import {Rating} from '../../molecules';
 
-const FoodCard = ({image}) => {
+const FoodCard = ({image, star}) => {
   return (
     <View style={styles.container}>
       <Image source={image} style={styles.image} />
       <View style={styles.content}>
         <Text style={styles.text}>Cherry Healthy</Text>
-        <View style={styles.ratingContainer}>
-          <View style={styles.starContainer}>
-            <ICStarOn />
-            <ICStarOn />
-            <ICStarOn />
-            <ICStarOn />
-            <ICStarOff />
-          </View>
-          <Text>4.5</Text>
-        </View>
+        <Rating star={star} />
       </View>
     </View>
   );
