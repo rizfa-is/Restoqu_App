@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {ArrowBack} from '../../../assets';
-import {TextInput} from '../../atoms';
 
 const Header = ({title, subtitle, onBack}) => {
   return (
