@@ -22,8 +22,10 @@ export default Rating;
 const styles = StyleSheet.create({
   ratingContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   starContainer: {
     flexDirection: 'row',
+    marginEnd: 4,
   },
 });

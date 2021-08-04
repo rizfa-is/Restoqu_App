@@ -3,5 +3,6 @@ import FoodCard1 from './foodcard1.png';
 import FoodCard2 from './foodcard2.png';
 import FoodCard3 from './foodcard3.png';
 import FoodCard4 from './foodcard4.png';
+import FoodDetailCard from './fooddetailcard.png';
 
-export {ImgProfile, FoodCard1, FoodCard2, FoodCard3, FoodCard4};
+export {ImgProfile, FoodCard1, FoodCard2, FoodCard3, FoodCard4, FoodDetailCard};
